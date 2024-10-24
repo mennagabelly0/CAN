@@ -1,0 +1,37 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer Send_Timer ;
+  const int TimePeriod = 1000 ;
+  message ACC_CMD_Message ACC_CMD ;
+  int variable_ACC = 0 ;
+  
+}
+
+on start
+{
+  write(" Hello Engineers , It's Me ENG : MENNA Gabely ")  ;
+  setTimer (Send_Timer , TimePeriod ) ;  
+  
+}
+
+on message Speed_Value_Message
+{
+  write("ECU1 Received from ECU2") ;
+}
+
+on timer Send_Timer
+{
+  write(" Hello Hello Engineers , It's Me ENG : MENNA Gabely Again ")  ;
+  //variable_ACC ^= 1 ;
+  variable_ACC = @sysvar::Acceleration_System_val ;
+  ACC_CMD.ACC_ON.phys = variable_ACC ;
+  output(ACC_CMD) ;
+  setTimer (Send_Timer , TimePeriod ) ;  
+
+}

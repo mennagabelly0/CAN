@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="Panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xf90bb5bee24d7e4e45e85f6e416ab50aadcd" ControlName="Static Text 3">
+      <Property Name="Name">Xf90bb5bee24d7e4e45e85f6e416ab50aadcd</Property>
+      <Property Name="Size">91, 15</Property>
+      <Property Name="Location">309, 220</Property>
+      <Property Name="Text">The Acceleration</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xb3c163e3e408fe41e3eb6b8e61b48980a36c" ControlName="Static Text 2">
+      <Property Name="Name">Xb3c163e3e408fe41e3eb6b8e61b48980a36c</Property>
+      <Property Name="Size">93, 15</Property>
+      <Property Name="Location">58, 220</Property>
+      <Property Name="Text">The Speed Meter</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xd646e45ae3496e4221eacc0e571a54151d4a" ControlName="Static Text 1">
+      <Property Name="Name">Xd646e45ae3496e4221eacc0e571a54151d4a</Property>
+      <Property Name="Size">377, 15</Property>
+      <Property Name="Location">30, 41</Property>
+      <Property Name="Text">Welcome here with me to check The Speed Meter through The Acceleration</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X5a306f79ef2c6e44ade8929e79b4ca13b050" ControlName="Switch / Indicator 1">
+      <Property Name="Name">X5a306f79ef2c6e44ade8929e79b4ca13b050</Property>
+      <Property Name="Size">56, 74</Property>
+      <Property Name="Location">325, 115</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;Acceleration_System_val;1;;;-1;;;Value;;;0</Property>
+      <Property Name="TabIndex">0</Property>
+      <Property Name="Epsilon">0</Property>
+      <Property Name="Increment">1</Property>
+      <Property Name="StartValue">0</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.MeterControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X67005417eac57e42c8eb628e3d526b521dd1" ControlName="Meter 1">
+      <Property Name="Name">X67005417eac57e42c8eb628e3d526b521dd1</Property>
+      <Property Name="Size">101, 91</Property>
+      <Property Name="Location">50, 115</Property>
+      <Property Name="SymbolConfiguration">8;2;Database1;ECU2_Speed_Sensor;Speed_Value_Message;Speed;1;CAN;CAN1;-1;;;Value;;;0</Property>
+      <Property Name="ScaleMax">255</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">446, 291</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">255, 255, 255, 255</Property>
+  </Object>
+</Panel>

@@ -1,0 +1,38 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  int Speed_variable = 0 ;
+  message Speed_Value_Message Speed_message;
+  
+}
+
+on start
+{
+  write(" Hello Engineers , ECU2 is Start ")  ;
+}
+
+on message ACC_CMD_Message
+{
+  write(" ACC_CMD is Called  ")  ;
+  if(this.ACC_ON.phys == 1 ) // ACC ON
+  {
+    if(Speed_variable < 255)
+      Speed_variable++ ;
+  }
+  else // ACC OFF
+  {
+    if(Speed_variable > 0)
+      Speed_variable-- ;
+  }
+  Speed_message.Speed.phys = Speed_variable ;
+  output(Speed_message) ;
+  
+}
+
+
+
